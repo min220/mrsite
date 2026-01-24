@@ -15,7 +15,7 @@ const About = () => {
   }, {
     icon: Sparkles,
     title: "Innovation",
-    description: "Exploring AI, fintech, and beyond"
+    description: "Exploring tech and the world beyond."
   }];
   return <section id="about" className="py-24 lg:py-32 bg-card">
       <div className="container mx-auto px-6">

@@ -6,25 +6,25 @@ const Goals = () => {
       icon: Target,
       title: "Master Full-Stack Development",
       description:
-        "Continue building end-to-end applications that solve real-world problems and create lasting impact.",
+        "Get fluent at building end-to-end, from UI to APIs to data, so I can ship real things quickly.",
     },
     {
       icon: Rocket,
       title: "Learn Continuously",
       description:
-        "Combine my CS and economics background to build a venture that addresses underserved market needs.",
+        "Stay in motion: new tools, new ideas, and a better understanding of how systems (and people) work.",
     },
     {
       icon: Heart,
       title: "Work on Real Problems",
       description:
-        "Mentor aspiring developers and contribute to open-source projects that democratize technology access.",
+        "Build for actual users: starting small, listening carefully, and improving what matters.",
     },
     {
       icon: Globe,
       title: "Think Globally",
       description:
-        "Work on solutions that bridge economic disparities and leverage tech for social good.",
+        "Bring a global lens to what I build, especially where tech meets access and inequality.",
     },
   ];
 

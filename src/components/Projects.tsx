@@ -45,7 +45,7 @@ const Projects = () => {
       // Put your folder/case-study link here when ready:
       // externalUrl: "https://drive.google.com/drive/folders/....",
       // Or link to an internal page you’ll build:
-      externalUrl: "/seconddoor",
+      externalUrl: "/#seconddoor",
     },
     {
       title: "Experiments",

@@ -2,21 +2,17 @@ import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 const Contact = () => {
   const socialLinks = [{
     icon: Mail,
-    href: "mailto:min.rungsinaporn@barnard.edu",
+    href: "mailto:minnichapha@gmail.com",
     label: "Email"
   }, {
     icon: Linkedin,
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/nichapha-rungsinaporn-03a737254/",
     label: "LinkedIn"
   }, {
     icon: Github,
-    href: "https://github.com",
+    href: "https://github.com/min220/",
     label: "GitHub"
-  }, {
-    icon: Twitter,
-    href: "https://twitter.com",
-    label: "Twitter"
-  }];
+  }, ];
   return <section id="contact" className="py-24 lg:py-32">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
