@@ -14,15 +14,30 @@ type Project = {
 const Projects = () => {
   const projects: Project[] = [
     {
-      title: "VEX Robotics",
-      category: "Engineering",
+  title: "Worn",
+  category: "Product + AI",
+  description:
+    "Native iOS app that uses Claude's vision API to auto-tag clothing and surface underworn pieces via natural-language vibe search. Built end-to-end—from data model to prompt engineering to UI design—addressing wardrobe over-consumption.",
+  tags: ["iOS", "Swift", "AI Integration", "Product Design"],
+  image: "/placeholder.svg",
+  color: "from-secondary to-muted",
+  // Put your folder/case-study link here when ready:
+  // externalUrl: "https://drive.google.com/drive/folders/....",
+  // Or link to an internal page you'll build:
+  externalUrl: "/#worn",
+},
+    {
+       title: "SecondDoor",
+      category: "Social Impact",
       description:
-        "Competitive robotics experience spanning multiple years across engineering design, programming, and strategy. Qualified for the World Championships twice, working in high-pressure, collaborative environments.",
-      tags: ["Engineering", "Programming", "Team-Based Design"],
+        "Builder at an early-stage NGO focused on housing access. Recently joined the team and currently contributing to early technical and systems planning.",
+      tags: ["Social Impact", "Systems", "Full Stack"],
       image: "/placeholder.svg",
-      color: "from-primary/20 to-coral-light/20",
-      // If you don't have a link, delete this line:
-      // externalUrl: "/vex",
+      color: "from-secondary to-muted",
+      // Put your folder/case-study link here when ready:
+      // externalUrl: "https://drive.google.com/drive/folders/....",
+      // Or link to an internal page you’ll build:
+      externalUrl: "/#seconddoor",
     },
     {
       title: "Tech Council",
@@ -34,18 +49,15 @@ const Projects = () => {
       color: "from-coral-light/20 to-secondary",
       externalUrl: "https://www.instagram.com/isbtechco/",
     },
-    {
-      title: "SecondDoor",
-      category: "Social Impact",
+    { title: "VEX Robotics",
+      category: "Engineering",
       description:
-        "Builder at an early-stage NGO focused on housing access. Recently joined the team and currently contributing to early technical and systems planning.",
-      tags: ["Social Impact", "Systems", "Full Stack"],
+        "Competitive robotics experience spanning multiple years across engineering design, programming, and strategy. Qualified for the World Championships twice, working in high-pressure, collaborative environments.",
+      tags: ["Engineering", "Programming", "Team-Based Design"],
       image: "/placeholder.svg",
-      color: "from-secondary to-muted",
-      // Put your folder/case-study link here when ready:
-      // externalUrl: "https://drive.google.com/drive/folders/....",
-      // Or link to an internal page you’ll build:
-      externalUrl: "/#seconddoor",
+      color: "from-primary/20 to-coral-light/20",
+      // If you don't have a link, delete this line:
+      // externalUrl: "/vex",
     },
     {
       title: "Experiments",
