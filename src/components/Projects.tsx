@@ -14,18 +14,15 @@ type Project = {
 const Projects = () => {
   const projects: Project[] = [
     {
-  title: "Worn",
-  category: "Product + AI",
-  description:
-    "Native iOS app that uses Claude's vision API to auto-tag clothing and surface underworn pieces via natural-language vibe search. Built end-to-end—from data model to prompt engineering to UI design—addressing wardrobe over-consumption.",
-  tags: ["iOS", "Swift", "AI Integration", "Product Design"],
-  image: "/placeholder.svg",
-  color: "from-secondary to-muted",
-  // Put your folder/case-study link here when ready:
-  // externalUrl: "https://drive.google.com/drive/folders/....",
-  // Or link to an internal page you'll build:
-  externalUrl: "/#worn",
-},
+      title: "Worn",
+      category: "Product + AI",
+      description:
+        "Native iOS app that uses Claude's vision API to auto-tag clothing and surface underworn pieces via natural-language vibe search. Built end-to-end—from data model to prompt engineering to UI design—addressing wardrobe over-consumption.",
+      tags: ["iOS", "Swift", "AI Integration", "Product Design"],
+      image: "/placeholder.svg",
+      color: "from-secondary to-muted",
+      externalUrl: "https://drive.google.com/drive/folders/16Qr_dmPiDHTFROZ9yhs6WPilZeKETE2y?usp=drive_link",
+    },
     {
        title: "SecondDoor",
       category: "Social Impact",
