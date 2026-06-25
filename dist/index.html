@@ -16,7 +16,6 @@
   --green: #469110;
   --dkgreen: #00520A;
   --blue: #1A2FD4;
-  --ltblue: #3D5BF5;
   --orange: #E8834A;
   --cream: #FDF8EE;
   --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -24,14 +23,11 @@
 }
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.6; overflow-x: hidden; }
-
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: var(--bg);
-  border-bottom: 1.5px solid var(--ink);
+  background: var(--bg); border-bottom: 1.5px solid var(--ink);
   display: flex; justify-content: space-between; align-items: center;
-  padding: 0 2rem;
-  height: 48px;
+  padding: 0 2rem; height: 48px;
 }
 .nav-logo { font-size: 13px; font-weight: 500; letter-spacing: -0.01em; }
 .nav-links { display: flex; gap: 0; list-style: none; }
@@ -42,230 +38,98 @@ nav {
   transition: background 0.15s, color 0.15s;
 }
 .nav-links a:hover { background: var(--pink); color: #fff; }
-
-#hero {
-  padding-top: 48px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.hero-top {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 1.5px solid var(--ink);
-}
+#hero { padding-top: 48px; min-height: 100vh; display: flex; flex-direction: column; }
+.hero-top { flex: 1; display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1.5px solid var(--ink); }
 .hero-left {
-  padding: 3rem 2rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border-right: 1.5px solid var(--ink);
+  padding: 3rem 2rem 2.5rem; display: flex; flex-direction: column;
+  justify-content: flex-end; border-right: 1.5px solid var(--ink);
 }
-.hero-tag {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  color: var(--muted);
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-.hero-name {
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  line-height: 0.95;
-  margin-bottom: 1.5rem;
-}
-.hero-desc {
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 1.75;
-  max-width: 380px;
-}
-.hero-right {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+.hero-tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.5rem; }
+.hero-name { font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 500; letter-spacing: -0.04em; line-height: 0.95; margin-bottom: 1.5rem; }
+.hero-desc { font-size: 15px; color: var(--muted); line-height: 1.75; max-width: 380px; }
+.hero-right { display: flex; flex-direction: column; overflow: hidden; }
 .color-block {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem 1.5rem;
-  border-bottom: 1.5px solid var(--ink);
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.6);
-  transition: flex 0.3s ease;
-  cursor: default;
-  min-height: 60px;
+  flex: 1; display: flex; align-items: flex-end; padding: 1rem 1.5rem;
+  border-bottom: 1.5px solid var(--ink); font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.08em; color: rgba(255,255,255,0.6);
+  transition: flex 0.3s ease; cursor: default; min-height: 60px;
 }
 .color-block:last-child { border-bottom: none; }
 .color-block:hover { flex: 3; }
 .cb1 { background: var(--blue); }
-.cb2 { background: var(--pink); color: rgba(255,255,255,0.7); }
+.cb2 { background: var(--pink); }
 .cb3 { background: var(--orange); }
 .cb4 { background: var(--green); }
-
-.hero-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.hb-cell {
-  padding: 1rem 1.5rem;
-  border-right: 1.5px solid var(--ink);
-  font-size: 13px;
-}
+.hero-bottom { display: grid; grid-template-columns: repeat(3, 1fr); }
+.hb-cell { padding: 1rem 1.5rem; border-right: 1.5px solid var(--ink); font-size: 13px; }
 .hb-cell:last-child { border-right: none; }
-.hb-label {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.25rem;
-}
-
+.hb-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.25rem; }
 .ticker-wrap {
-  overflow: hidden;
-  border-top: 1.5px solid var(--ink);
-  border-bottom: 1.5px solid var(--ink);
-  background: var(--blue);
-  padding: 0.55rem 0;
-  white-space: nowrap;
+  overflow: hidden; border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink);
+  background: var(--blue); padding: 0.55rem 0; white-space: nowrap;
 }
 .ticker-inner {
-  display: inline-block;
-  animation: ticker 24s linear infinite;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.07em;
-  color: #fff;
+  display: inline-block; animation: ticker 24s linear infinite;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.07em; color: #fff;
 }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
 #projects { padding: 4rem 0 0; }
 .sec-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0 2rem 1.5rem;
-  border-bottom: 1.5px solid var(--ink);
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 0 2rem 1.5rem; border-bottom: 1.5px solid var(--ink);
 }
 .sec-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
-
 .proj-row {
-  display: grid;
-  grid-template-columns: 48px 1fr 100px;
-  border-bottom: 1.5px solid var(--ink);
-  transition: background 0.15s;
-  position: relative;
-  overflow: hidden;
+  display: grid; grid-template-columns: 48px 1fr 100px;
+  border-bottom: 1.5px solid var(--ink); transition: background 0.15s;
+  position: relative; overflow: hidden;
 }
 .proj-row::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 4px;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.25s ease;
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  transform: scaleY(0); transform-origin: top; transition: transform 0.25s ease;
 }
 .proj-row:hover { background: var(--cream); }
 .proj-row:hover::before { transform: scaleY(1); }
 .proj-row:hover .proj-arrow { opacity: 1; transform: translate(2px,-2px); }
-
 .p1::before { background: var(--blue); }
 .p2::before { background: var(--pink); }
 .p3::before { background: var(--green); }
 .p4::before { background: var(--orange); }
-
-.proj-num {
-  font-family: var(--mono); font-size: 11px; color: var(--muted);
-  padding: 1.75rem 0 1.75rem 2rem;
-  display: flex; align-items: flex-start;
-}
-.proj-body {
-  padding: 1.5rem 1.5rem 1.5rem 0;
-  border-left: 1.5px solid var(--border);
-  padding-left: 1.5rem;
-}
+.proj-num { font-family: var(--mono); font-size: 11px; color: var(--muted); padding: 1.75rem 0 1.75rem 2rem; display: flex; align-items: flex-start; }
+.proj-body { padding: 1.5rem 1.5rem 1.5rem 1.5rem; border-left: 1.5px solid var(--border); }
 .proj-title { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
 .proj-desc { font-size: 13px; color: var(--muted); line-height: 1.6; max-width: 500px; margin-bottom: 0.65rem; }
 .proj-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .proj-tag { font-family: var(--mono); font-size: 10px; padding: 2px 7px; border-radius: 2px; letter-spacing: 0.03em; }
-
 .proj-side {
-  padding: 1.5rem 1.5rem 1.5rem 1rem;
-  display: flex; flex-direction: column;
-  justify-content: space-between; align-items: flex-end;
-  border-left: 1.5px solid var(--border);
+  padding: 1.5rem 1.5rem 1.5rem 1rem; display: flex; flex-direction: column;
+  justify-content: space-between; align-items: flex-end; border-left: 1.5px solid var(--border);
 }
 .proj-year { font-family: var(--mono); font-size: 11px; color: var(--muted); }
-.proj-arrow {
-  font-size: 16px; opacity: 0; color: var(--ink);
-  transition: opacity 0.2s, transform 0.2s;
-  text-decoration: none;
-}
-
-#about {
-  border-top: 1.5px solid var(--ink);
-  margin-top: 4rem;
-}
-.about-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.about-l {
-  border-right: 1.5px solid var(--ink);
-  padding: 3rem 2rem;
-}
-.about-heading {
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
-  margin-bottom: 1.75rem;
-}
+.proj-arrow { font-size: 16px; opacity: 0; color: var(--ink); transition: opacity 0.2s, transform 0.2s; text-decoration: none; }
+#about { border-top: 1.5px solid var(--ink); margin-top: 4rem; }
+.about-wrap { display: grid; grid-template-columns: 1fr 1fr; }
+.about-l { border-right: 1.5px solid var(--ink); padding: 3rem 2rem; }
+.about-heading { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 1.75rem; }
 .hl-pink { background: var(--pink); color: #fff; padding: 1px 6px; }
 .about-body { font-size: 14px; color: var(--muted); line-height: 1.85; }
 .about-body p + p { margin-top: 0.85rem; }
-
 .about-r { padding: 3rem 2rem; }
 .info-block { margin-bottom: 2rem; }
-.info-label {
-  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--muted);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.4rem; margin-bottom: 0.6rem;
-}
+.info-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-bottom: 0.6rem; }
 .info-items { display: flex; flex-direction: column; gap: 0.3rem; }
 .info-item { font-size: 13px; color: var(--ink); }
-
-footer {
-  border-top: 1.5px solid var(--ink);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 0;
-}
+footer { border-top: 1.5px solid var(--ink); display: grid; grid-template-columns: 1fr 1fr; }
 .foot-l { padding: 1.5rem 2rem; border-right: 1.5px solid var(--ink); }
 .foot-r { padding: 1.5rem 2rem; display: flex; gap: 1.75rem; align-items: center; flex-wrap: wrap; }
 .foot-text { font-family: var(--mono); font-size: 11px; color: var(--muted); }
-.foot-link {
-  font-size: 13px; color: var(--ink); text-decoration: none;
-  border-bottom: 1px solid var(--border); padding-bottom: 1px;
-  transition: border-color 0.2s, color 0.2s;
-}
+.foot-link { font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s, color 0.2s; }
 .foot-link:hover { color: var(--blue); border-color: var(--blue); }
-
 .fade-up { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
-
 <nav>
   <span class="nav-logo">Min Rungsinaporn</span>
   <ul class="nav-links">
@@ -274,13 +138,12 @@ footer {
     <li><a href="mailto:nr2802@barnard.edu">Contact</a></li>
   </ul>
 </nav>
-
 <section id="hero">
   <div class="hero-top">
     <div class="hero-left">
       <div class="hero-tag">Sophomore — Barnard College, Columbia · Class of 2029</div>
       <h1 class="hero-name">I like to<br>build and<br>explore.</h1>
-      <p class="hero-desc">CS and Economics student who makes things, explore things, and figures out what happened. Currently interested in AI, data, and whatever's next.</p>
+      <p class="hero-desc">CS and Economics student who makes things, breaks things, and figures out what happened. Currently interested in AI, data, and whatever's next.</p>
     </div>
     <div class="hero-right">
       <div class="color-block cb1">blue / cobalt</div>
@@ -290,106 +153,75 @@ footer {
     </div>
   </div>
   <div class="hero-bottom">
-    <div class="hb-cell">
-      <div class="hb-label">Based in</div>
-      Bangkok &amp; New York
-    </div>
-    <div class="hb-cell">
-      <div class="hb-label">Studying</div>
-      CS + Economics
-    </div>
-    <div class="hb-cell">
-      <div class="hb-label">Open to</div>
-      Internships, research, building things
-    </div>
+    <div class="hb-cell"><div class="hb-label">Based in</div>Bangkok &amp; New York</div>
+    <div class="hb-cell"><div class="hb-label">Studying</div>CS + Economics</div>
+    <div class="hb-cell"><div class="hb-label">Open to</div>Internships, research, building things</div>
   </div>
 </section>
-
 <div class="ticker-wrap">
-  <span class="ticker-inner">
-    mosaic · worn · seconddoor · question bank · python · swift · react · claude api · agentic pipelines · data · ai · nlp · api integration · barnard college · columbia university · bangkok · new york · mosaic · worn · seconddoor · question bank · python · swift · react · claude api · agentic pipelines · data · ai · nlp · api integration · barnard college · columbia university · bangkok · new york ·&nbsp;
-  </span>
+  <span class="ticker-inner">mosaic · worn · seconddoor · question bank · python · swift · react · claude api · agentic pipelines · data · ai · nlp · api integration · barnard college · columbia university · bangkok · new york · mosaic · worn · seconddoor · question bank · python · swift · react · claude api · agentic pipelines · data · ai · nlp · api integration · barnard college · columbia university · bangkok · new york ·&nbsp;</span>
 </div>
-
 <section id="projects">
   <div class="sec-header">
     <span class="sec-label">Selected projects</span>
     <span class="sec-label">2024 — 2026</span>
   </div>
-
   <div class="proj-row p1 fade-up">
     <div class="proj-num">01</div>
     <div class="proj-body">
       <div class="proj-title">mosaic</div>
       <div class="proj-desc">Agentic document privacy auditing pipeline. Detects sensitive information leakage including cross-document inference risks — what no single document reveals alone.</div>
       <div class="proj-tags">
-        <span class="proj-tag" style="background:#EBF0FF; color:#1A2FD4;">python</span>
-        <span class="proj-tag" style="background:#EBF0FF; color:#1A2FD4;">claude api</span>
-        <span class="proj-tag" style="background:#EBF0FF; color:#1A2FD4;">fastapi</span>
-        <span class="proj-tag" style="background:#EBF0FF; color:#1A2FD4;">react</span>
+        <span class="proj-tag" style="background:#EBF0FF;color:#1A2FD4;">python</span>
+        <span class="proj-tag" style="background:#EBF0FF;color:#1A2FD4;">claude api</span>
+        <span class="proj-tag" style="background:#EBF0FF;color:#1A2FD4;">fastapi</span>
+        <span class="proj-tag" style="background:#EBF0FF;color:#1A2FD4;">react</span>
       </div>
     </div>
-    <div class="proj-side">
-      <span class="proj-year">2026</span>
-      <a class="proj-arrow" href="https://github.com/min220/mosaic" target="_blank">↗</a>
-    </div>
+    <div class="proj-side"><span class="proj-year">2026</span><a class="proj-arrow" href="https://github.com/min220/mosaic" target="_blank">↗</a></div>
   </div>
-
   <div class="proj-row p2 fade-up">
     <div class="proj-num">02</div>
     <div class="proj-body">
       <div class="proj-title">worn</div>
       <div class="proj-desc">AI-powered digital closet for iOS. Upload photos of your clothes, search with natural language. Built to surface what you've forgotten, not just what fits the filters.</div>
       <div class="proj-tags">
-        <span class="proj-tag" style="background:#FDE8F3; color:#660033;">swift</span>
-        <span class="proj-tag" style="background:#FDE8F3; color:#660033;">swiftui</span>
-        <span class="proj-tag" style="background:#FDE8F3; color:#660033;">claude vision</span>
-        <span class="proj-tag" style="background:#FDE8F3; color:#660033;">ios</span>
+        <span class="proj-tag" style="background:#FDE8F3;color:#660033;">swift</span>
+        <span class="proj-tag" style="background:#FDE8F3;color:#660033;">swiftui</span>
+        <span class="proj-tag" style="background:#FDE8F3;color:#660033;">claude vision</span>
+        <span class="proj-tag" style="background:#FDE8F3;color:#660033;">ios</span>
       </div>
     </div>
-    <div class="proj-side">
-      <span class="proj-year">2026</span>
-      <a class="proj-arrow" href="#" target="_blank">↗</a>
-    </div>
+    <div class="proj-side"><span class="proj-year">2026</span><a class="proj-arrow" href="#" target="_blank">↗</a></div>
   </div>
-
   <div class="proj-row p3 fade-up">
     <div class="proj-num">03</div>
     <div class="proj-body">
       <div class="proj-title">seconddoor</div>
-      <div class="proj-desc">Backend for a nonprofit housing platform connecting renters with unconventional backgrounds to fair landlords. Migrated the app off Base44, moved it to Git, and integrated the RentCast API to display live NYC listings.</div>
+      <div class="proj-desc">Backend for a nonprofit housing platform connecting renters with unconventional backgrounds to fair landlords. Migrated the app off Base44, moved to Git, and integrated the RentCast API to display live NYC listings.</div>
       <div class="proj-tags">
-        <span class="proj-tag" style="background:#E8F5E0; color:#2D6B0A;">python</span>
-        <span class="proj-tag" style="background:#E8F5E0; color:#2D6B0A;">rentcast api</span>
-        <span class="proj-tag" style="background:#E8F5E0; color:#2D6B0A;">backend</span>
-        <span class="proj-tag" style="background:#E8F5E0; color:#2D6B0A;">git migration</span>
+        <span class="proj-tag" style="background:#E8F5E0;color:#2D6B0A;">python</span>
+        <span class="proj-tag" style="background:#E8F5E0;color:#2D6B0A;">rentcast api</span>
+        <span class="proj-tag" style="background:#E8F5E0;color:#2D6B0A;">backend</span>
+        <span class="proj-tag" style="background:#E8F5E0;color:#2D6B0A;">git migration</span>
       </div>
     </div>
-    <div class="proj-side">
-      <span class="proj-year">2025</span>
-      <a class="proj-arrow" href="#" target="_blank">↗</a>
-    </div>
+    <div class="proj-side"><span class="proj-year">2025</span><a class="proj-arrow" href="#" target="_blank">↗</a></div>
   </div>
-
   <div class="proj-row p4 fade-up">
     <div class="proj-num">04</div>
     <div class="proj-body">
       <div class="proj-title">question bank</div>
       <div class="proj-desc">Fine-tuned model for question generation from course material. Hit the limits of local compute — the experience taught me more about what I want to build next than the project itself did.</div>
       <div class="proj-tags">
-        <span class="proj-tag" style="background:#FEF0E6; color:#994422;">python</span>
-        <span class="proj-tag" style="background:#FEF0E6; color:#994422;">fine-tuning</span>
-        <span class="proj-tag" style="background:#FEF0E6; color:#994422;">nlp</span>
+        <span class="proj-tag" style="background:#FEF0E6;color:#994422;">python</span>
+        <span class="proj-tag" style="background:#FEF0E6;color:#994422;">fine-tuning</span>
+        <span class="proj-tag" style="background:#FEF0E6;color:#994422;">nlp</span>
       </div>
     </div>
-    <div class="proj-side">
-      <span class="proj-year">2024</span>
-      <a class="proj-arrow" href="#" target="_blank">↗</a>
-    </div>
+    <div class="proj-side"><span class="proj-year">2024</span><a class="proj-arrow" href="#" target="_blank">↗</a></div>
   </div>
-
 </section>
-
 <section id="about">
   <div class="about-wrap">
     <div class="about-l fade-up">
@@ -428,7 +260,6 @@ footer {
     </div>
   </div>
 </section>
-
 <footer>
   <div class="foot-l">
     <div class="foot-text">Min Rungsinaporn — 2026</div>
@@ -441,7 +272,6 @@ footer {
     <a class="foot-link" href="/resume.pdf" target="_blank">Resume</a>
   </div>
 </footer>
-
 <script>
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e, i) => {
